@@ -1,4 +1,4 @@
-import json, hashlib, sys
+import json, hashlib, sys, subprocess, os
 from external import CCourse
 from external import CPerson
 
@@ -84,6 +84,9 @@ def createFile(path):
         f.write(Text)
         f.close()
         print("Die Datei wurde gespeichert.")
+        dir = os.getcwd() + '\\' + path
+        print(dir)
+        subprocess.Popen(r'explorer /select,"' + dir + '"')
     except:
         print("Die Datei konnte nicht gespeichert werden.")
         input()

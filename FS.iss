@@ -2,14 +2,14 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Ferienspass Converter"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "ARO-Studios"
 #define MyAppExeName "Ferienspass Converter.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{57679CF0-7AD7-41DE-9E8B-5766129298CE}
+AppId={{685989F4-2E51-4411-BB7C-07FC9A4D3800}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -18,9 +18,9 @@ DefaultDirName={autopf}\{#MyAppName}
 DisableProgramGroupPage=yes
 ; Remove the following line to run in administrative install mode (install for all users.)
 PrivilegesRequired=lowest
-OutputDir=C:\Users\Alexander\Desktop\out
-OutputBaseFilename=FerienspassConverter
-SetupIconFile=C:\Users\Alexander\Desktop\FS.ico
+OutputDir=D:\Privat\Programme\#Auftrag\Elfi Romberg\Ferienspass Converter\Build
+OutputBaseFilename=FerienspassConverterInstaller
+SetupIconFile=C:\Users\Alexander\Desktop\icon.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -32,76 +32,76 @@ Name: "german"; MessagesFile: "compiler:Languages\German.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\Ferienspass Converter.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_asyncio.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_bz2.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_ctypes.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_decimal.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_elementtree.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_hashlib.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_lzma.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_multiprocessing.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_overlapped.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_queue.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_socket.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_ssl.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_testcapi.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\_tkinter.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-console-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-datetime-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-debug-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-errorhandling-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-file-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-file-l1-2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-file-l2-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-handle-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-heap-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-interlocked-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-libraryloader-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-localization-l1-2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-memory-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-namedpipe-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-processenvironment-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-processthreads-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-processthreads-l1-1-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-profile-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-rtlsupport-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-string-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-synch-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-synch-l1-2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-sysinfo-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-timezone-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-core-util-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-conio-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-convert-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-environment-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-filesystem-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-heap-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-locale-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-math-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-process-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-runtime-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-stdio-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-string-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-time-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\api-ms-win-crt-utility-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\base_library.zip"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\Ferienspass Converter.exe.manifest"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\libcrypto-1_1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\libffi-7.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\libssl-1_1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\pyexpat.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\python38.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\select.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\tcl86t.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\tk86t.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\ucrtbase.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\unicodedata.pyd"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\VCRUNTIME140.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\Include"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\lib2to3"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\tcl"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "C:\Users\Alexander\Desktop\out\Ferienspass Converter\tk"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Alexander\output\Ferienspass Converter\Ferienspass Converter.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_asyncio.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_bz2.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_ctypes.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_decimal.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_elementtree.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_hashlib.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_lzma.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_multiprocessing.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_overlapped.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_queue.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_socket.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_ssl.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_testcapi.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\_tkinter.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-console-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-datetime-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-debug-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-errorhandling-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-file-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-file-l1-2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-file-l2-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-handle-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-heap-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-interlocked-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-libraryloader-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-localization-l1-2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-memory-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-namedpipe-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-processenvironment-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-processthreads-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-processthreads-l1-1-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-profile-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-rtlsupport-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-string-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-synch-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-synch-l1-2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-sysinfo-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-timezone-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-core-util-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-conio-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-convert-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-environment-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-filesystem-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-heap-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-locale-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-math-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-process-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-runtime-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-stdio-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-string-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-time-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\api-ms-win-crt-utility-l1-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\base_library.zip"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\Ferienspass Converter.exe.manifest"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\libcrypto-1_1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\libffi-7.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\libssl-1_1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\pyexpat.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\python38.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\select.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\tcl86t.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\tk86t.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\ucrtbase.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\unicodedata.pyd"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\VCRUNTIME140.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Alexander\output\Ferienspass Converter\Include"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Alexander\output\Ferienspass Converter\lib2to3"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Alexander\output\Ferienspass Converter\tcl"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Alexander\output\Ferienspass Converter\tk"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
